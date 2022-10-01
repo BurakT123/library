@@ -1,4 +1,4 @@
-function asciiToBinary(letter, toBase = 2, output = "") {
+function asciiAndBinary(letter, toBase = 2, output = "") {
     const asciiCode = letter.slice(0) && !letter.slice(1) ? letter.codePointAt(0) : null
     if (toBase <= 1) return "Error: An integer less than two cannot be used in this conversion."
 
@@ -16,6 +16,6 @@ function asciiToBinary(letter, toBase = 2, output = "") {
     return { letter, asciiCode, binaryCode: binaryCode(division(asciiCode)) }
 }
 
-console.log(asciiToBinary("a"))
+console.log(asciiAndBinary("a"))
 
 //Online Test: https://runkit.com/cihatksm/ascii-binary
