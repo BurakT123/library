@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cihat"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-18 06:22:59 PM"/>
+        <attribute name="created" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0xODswNToxMDo1NCBQTTsyMzky"/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0xODswNjoyMjo1OSBQTTsxOzI1MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, x, &#916;, kok1, kok2, k&#916;, number" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#9654;&#65039; Bir ax&#178;+bx+c ikinci denkleminin k&#246;klerini bu i&#351;lem ile bulaca&#287;&#305;z&quot;" newline="True"/>
+            <output expression="&quot;&#9654;&#65039; Hesaplamay&#305; yapabilmek i&#231;in bilinmeyen de&#287;erleri yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <output expression="&quot;&#9989; L&#252;tfen a de&#287;erini yaz&#305;n&#305;z&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;&#9989; L&#252;tfen b de&#287;erini yaz&#305;n&#305;z&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;&#9989; L&#252;tfen c de&#287;erini yaz&#305;n&#305;z&quot;" newline="True"/>
+            <input variable="c"/>
+            <output expression="&quot;K&#246;kleri bulunacak denklem: &quot; &amp; a &amp; &quot;x&#178; + &quot; &amp; b &amp; &quot;x +&quot; &amp; c" newline="True"/>
+            <assign variable="&#916;" expression="(b * b) - (4 * a * c)"/>
+            <output expression="&#916;" newline="True"/>
+            <assign variable="number" expression="1"/>
+            <if expression="&#916; &lt; 0">
+                <then>
+                    <output expression="&quot;&#8505;&#65039; Bu denklemin reel k&#246;k&#252; yoktur.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#304;&#351;lem yap&#305;l&#305;yor...&quot;" newline="True"/>
+                    <for variable="Number" start="1" end="number" direction="inc" step="1">
+                        <if expression="Number * Number = &#916;">
+                            <then>
+                                <assign variable="k&#916;" expression="Number"/>
+                            </then>
+                            <else>
+                                <assign variable="number" expression="number + 1"/>
+                            </else>
+                        </if>
+                    </for>
+                    <assign variable="kok1" expression="(-b + k&#916;) / 2 * a"/>
+                    <assign variable="kok2" expression="(-b - k&#916;) / 2 * a"/>
+                    <output expression="a &amp; &quot;x&#178; + &quot; &amp; b &amp; &quot;x +&quot; &amp; c &amp; &quot; &#9654;&#65039; Denkleminin k&#246;kleri bulundu.&quot;" newline="True"/>
+                    <output expression="&quot;x&#8321; = &quot; &amp; kok1" newline="True"/>
+                    <output expression="&quot;x&#8322; = &quot; &amp; kok2" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
