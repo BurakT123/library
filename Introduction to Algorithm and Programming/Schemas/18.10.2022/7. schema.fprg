@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cihat"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-18 12:43:31 PM"/>
+        <attribute name="created" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0xODsxMjoyNTozNSBQTTsyMzk1"/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0xODsxMjoyNTozOSBQTTsxO2NpaGF0O0NJSEFUS1NNOzIwMjItMTAtMTg7MTI6MjA6NDcgUE07VEVTVDYuZnByZzs1ODY5"/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0xODsxMjo0MzozMSBQTTsxOzI0OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, T, S, SS" type="Integer" array="False" size=""/>
+            <declare name="SAYILAR" type="String" array="False" size=""/>
+            <declare name="O" type="Real" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <while expression="A = B">
+                <output expression="&quot;L&#220;TFEN FARKLI B&#304;R SAYI G&#304;R&#304;N&#304;Z&quot;" newline="True"/>
+                <input variable="B"/>
+            </while>
+            <while expression="A &gt; B">
+                <output expression="&quot;L&#220;TFEN &#304;LK SAYIDAN B&#220;Y&#220;K B&#304;R SAYI YAZINIZ&quot;" newline="True"/>
+                <input variable="B"/>
+            </while>
+            <if expression="A % 2 = 1">
+                <then>
+                    <assign variable="A" expression="A + 1"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="SAYILAR" expression="&quot;&quot;"/>
+            <assign variable="SS" expression="0"/>
+            <assign variable="T" expression="0"/>
+            <for variable="S" start="A" end="B" direction="inc" step="2">
+                <assign variable="SS" expression="SS + 1"/>
+                <if expression="SAYILAR = &quot;&quot;">
+                    <then>
+                        <assign variable="SAYILAR" expression="SAYILAR &amp; S"/>
+                    </then>
+                    <else>
+                        <assign variable="SAYILAR" expression="SAYILAR &amp; &quot;,&quot; &amp; S"/>
+                    </else>
+                </if>
+                <assign variable="T" expression="T + S"/>
+            </for>
+            <assign variable="O" expression="T / SS"/>
+            <output expression="&quot;SAYILAR=&quot;&amp;SAYILAR&amp;&#13;&#10;&quot; SAYILARIN ORTALAMASI=&quot;&amp;O&amp;&#13;&#10;&quot; SAYILARIN TOPLAMI=&quot;&amp;T" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

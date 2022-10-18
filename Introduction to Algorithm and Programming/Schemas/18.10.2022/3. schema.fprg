@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cihat"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-18 11:36:23 AM"/>
+        <attribute name="created" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0xODsxMToyODoxMSBBTTsyMzc2"/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0xODsxMTozNjoyMyBBTTsxOzI0ODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="X, Y, Z, T" type="Integer" array="False" size=""/>
+            <declare name="O" type="Real" array="False" size=""/>
+            <input variable="X"/>
+            <input variable="Y"/>
+            <input variable="Z"/>
+            <assign variable="T" expression="X + Y + Z"/>
+            <assign variable="O" expression="T / 3"/>
+            <output expression="&quot;&#220;&#199; SAYININ TOPLAMI=&quot;&amp;T&amp;&quot; ORTALAMASI=&quot;&amp;O" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cihat"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-18 11:43:34 AM"/>
+        <attribute name="created" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0xODsxMToxNTo0OCBBTTsyMzgy"/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0xODsxMToxNTo1MiBBTTsxO2NpaGF0O0NJSEFUS1NNOzIwMjItMTAtMTg7MDk6MDg6MjMgQU07VEVTVC5mcHJnOzU3ODQ="/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0xODsxMTo0MzozNCBBTTszOzI0ODg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="X, Y, T, F, C, B" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#304;LK SAYISI YAZINIZ&quot;" newline="True"/>
+            <input variable="X"/>
+            <output expression="&quot;&#304;K&#304;NC&#304; SAYIYI YAZINIZ&quot;" newline="True"/>
+            <input variable="Y"/>
+            <if expression="X = Y">
+                <then>
+                    <while expression="X = Y">
+                        <output expression="&quot;FARKLI B&#304;R SAYI YAZINIZ&quot;" newline="True"/>
+                        <input variable="Y"/>
+                    </while>
+                </then>
+                <else>
+                    <output expression="&quot;&#304;&#350;LEM YAPILIYOR...&quot;" newline="True"/>
+                </else>
+            </if>
+            <assign variable="T" expression="X+Y"/>
+            <assign variable="C" expression="X*Y"/>
+            <if expression="X &gt; Y">
+                <then>
+                    <assign variable="F" expression="X - Y"/>
+                    <assign variable="B" expression="X / Y"/>
+                </then>
+                <else>
+                    <assign variable="F" expression="Y - X"/>
+                    <assign variable="B" expression="Y / X"/>
+                </else>
+            </if>
+            <output expression="&quot; TOPLAMA=&quot;&amp;T&amp;&#13;&#10;&quot; &#199;IKARMA=&quot;&amp;F&amp;&#13;&#10;&quot; &#199;ARPMA=&quot;&amp;C&amp;&#13;&#10;&quot; B&#214;LME=&quot;&amp;B" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
