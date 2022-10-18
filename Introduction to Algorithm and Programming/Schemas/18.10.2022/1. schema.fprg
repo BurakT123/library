@@ -11,40 +11,6 @@
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="A, B, TOPLA, CIKAR, CARP" type="Integer" array="False" size=""/>
-            <declare name="BOL" type="Real" array="False" size=""/>
-            <input variable="A"/>
-            <input variable="B"/>
-            <assign variable="TOPLA" expression="A + B"/>
-            <assign variable="CIKAR" expression="A - B"/>
-            <assign variable="CARP" expression="A * B"/>
-            <assign variable="BOL" expression="A / B"/>
-            <output expression="&quot;TOPLAM&quot;&amp;TOPLA" newline="True"/>
-            <output expression="&quot;B&#214;LME&quot;&amp;BOL" newline="True"/>
-            <output expression="&quot;&#199;IKARMA&quot;&amp;CIKAR" newline="True"/>
-            <output expression="&quot;&#199;ARPMA&quot;&amp;CARP" newline="True"/>
-        </body>
-    </function>
-    <function name="input" type="None" variable="">
-        <parameters/>
-        <body>
-            <declare name="X, Y, T, C, F" type="Integer" array="False" size=""/>
-            <declare name="B" type="Real" array="False" size=""/>
-            <input variable="A"/>
-            <input variable="B"/>
-            <assign variable="T" expression="X + Y"/>
-            <assign variable="C" expression="X * Y"/>
-            <assign variable="B" expression="X / Y"/>
-            <assign variable="F" expression="X - Y"/>
-            <output expression="T" newline="True"/>
-            <output expression="F" newline="True"/>
-            <output expression="C" newline="True"/>
-            <output expression="B" newline="True"/>
-        </body>
-    </function>
-    <function name="problem2" type="None" variable="">
-        <parameters/>
-        <body>
             <declare name="X, Y, T, F, C, B" type="Integer" array="False" size=""/>
             <input variable="X"/>
             <input variable="Y"/>
