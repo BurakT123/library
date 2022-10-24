@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="cihat"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-10-19 09:57:21 AM"/>
+        <attribute name="saved" value="2022-10-24 10:23:50 PM"/>
         <attribute name="created" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0xODswNToxMDo1NCBQTTsyMzky"/>
-        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0xOTswOTo1NzoyMSBBTTs0OzI0OTg="/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0yNDsxMDoyMzo1MCBQTTs1OzI0OTc="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -19,7 +19,7 @@
             <input variable="b"/>
             <output expression="&quot;&#9989; L&#252;tfen c de&#287;erini yaz&#305;n&#305;z&quot;" newline="True"/>
             <input variable="c"/>
-            <assign variable="&#916;" expression="b * b - 4 * a * c"/>
+            <assign variable="&#916;" expression="b^2 - 4 * a * c"/>
             <if expression="&#916; &lt; 0">
                 <then>
                     <output expression="&quot;&#8505;&#65039; Bu denklemin reel k&#246;k&#252; yoktur.&quot;" newline="True"/>
