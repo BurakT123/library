@@ -4,49 +4,51 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="cihat"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-10-25 10:09:49 AM"/>
+        <attribute name="saved" value="2022-10-25 10:20:05 AM"/>
         <attribute name="created" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0xODswNToxMDo1NCBQTTsyMzky"/>
-        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0yNTsxMDowOTo0OSBBTTs2OzI0OTY="/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0yNTsxMDoyMDowNSBBTTs3OzI0ODI="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="a, b, c, x, &#916;, k&#916;" type="Integer" array="False" size=""/>
+            <declare name="a, b, c, x, &#916;, k&#916;, y" type="Integer" array="False" size=""/>
             <declare name="kok1, kok2" type="Real" array="False" size=""/>
-            <output expression="&quot;&#9654;&#65039; Hesaplamay&#305; yapabilmek i&#231;in bilinmeyen de&#287;erleri yaz&#305;n&#305;z.&quot;" newline="True"/>
-            <output expression="&quot;&#9989; L&#252;tfen a de&#287;erini yaz&#305;n&#305;z&quot;" newline="True"/>
-            <input variable="a"/>
-            <while expression="a = 0">
-                <output expression="&quot;&#10062; L&#252;tfen a de&#287;erini 0'dan farkl&#305; yaz&#305;n&#305;z&quot;" newline="True"/>
+            <for variable="y" start="1" end="3" direction="inc" step="1">
+                <output expression="&quot;&#9654;&#65039; Hesaplamay&#305; yapabilmek i&#231;in bilinmeyen de&#287;erleri yaz&#305;n&#305;z.&quot;" newline="True"/>
+                <output expression="&quot;&#9989; L&#252;tfen a de&#287;erini yaz&#305;n&#305;z&quot;" newline="True"/>
                 <input variable="a"/>
-            </while>
-            <output expression="&quot;&#9989; L&#252;tfen b de&#287;erini yaz&#305;n&#305;z&quot;" newline="True"/>
-            <input variable="b"/>
-            <output expression="&quot;&#9989; L&#252;tfen c de&#287;erini yaz&#305;n&#305;z&quot;" newline="True"/>
-            <input variable="c"/>
-            <assign variable="&#916;" expression="b^2 - 4 * a * c"/>
-            <if expression="&#916; &lt; 0">
-                <then>
-                    <output expression="&quot;&#8505;&#65039; Bu denklemin reel k&#246;k&#252; yoktur.&quot;" newline="True"/>
-                </then>
-                <else>
-                    <output expression="&quot;&#304;&#351;lem yap&#305;l&#305;yor...&quot;" newline="True"/>
-                    <assign variable="k&#916;" expression="SQRT(&#916;)"/>
-                    <assign variable="kok1" expression="(-b + k&#916;) / 2 * a"/>
-                    <assign variable="kok2" expression="(-b - k&#916;) / 2 * a"/>
-                    <output expression="&quot;&#9654;&#65039; Denkleminin k&#246;kleri bulundu.&quot;" newline="True"/>
-                    <if expression="&#916; = 0">
-                        <then>
-                            <output expression="&quot;Bu denklemin k&#246;kleri &#231;ak&#305;&#351;&#305;kt&#305;r.&quot;" newline="True"/>
-                            <output expression="&quot;Denklemin K&#246;k&#252;: &quot; &amp; kok1" newline="True"/>
-                        </then>
-                        <else>
-                            <output expression="&quot;x&#8321; = &quot; &amp; kok1" newline="True"/>
-                            <output expression="&quot;x&#8322; = &quot; &amp; kok2" newline="True"/>
-                        </else>
-                    </if>
-                </else>
-            </if>
+                <while expression="a = 0">
+                    <output expression="&quot;&#10062; L&#252;tfen a de&#287;erini 0'dan farkl&#305; yaz&#305;n&#305;z&quot;" newline="True"/>
+                    <input variable="a"/>
+                </while>
+                <output expression="&quot;&#9989; L&#252;tfen b de&#287;erini yaz&#305;n&#305;z&quot;" newline="True"/>
+                <input variable="b"/>
+                <output expression="&quot;&#9989; L&#252;tfen c de&#287;erini yaz&#305;n&#305;z&quot;" newline="True"/>
+                <input variable="c"/>
+                <assign variable="&#916;" expression="b^2 - 4 * a * c"/>
+                <if expression="&#916; &lt; 0">
+                    <then>
+                        <output expression="&quot;&#8505;&#65039; Bu denklemin reel k&#246;k&#252; yoktur.&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;&#304;&#351;lem yap&#305;l&#305;yor...&quot;" newline="True"/>
+                        <assign variable="k&#916;" expression="SQRT(&#916;)"/>
+                        <assign variable="kok1" expression="(-b + k&#916;) / 2 * a"/>
+                        <assign variable="kok2" expression="(-b - k&#916;) / 2 * a"/>
+                        <output expression="&quot;&#9654;&#65039; Denkleminin k&#246;kleri bulundu.&quot;" newline="True"/>
+                        <if expression="&#916; = 0">
+                            <then>
+                                <output expression="&quot;Bu denklemin k&#246;kleri &#231;ak&#305;&#351;&#305;kt&#305;r.&quot;" newline="True"/>
+                                <output expression="&quot;Denklemin K&#246;k&#252;: &quot; &amp; kok1" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;x&#8321; = &quot; &amp; kok1" newline="True"/>
+                                <output expression="&quot;x&#8322; = &quot; &amp; kok2" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
         </body>
     </function>
 </flowgorithm>
