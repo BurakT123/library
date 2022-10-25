@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cihat"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-25 11:18:18 AM"/>
+        <attribute name="created" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0yNTsxMDo0MjozMSBBTTsyMzcx"/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0yNTsxMToxODoxOCBBTTsxOzI0ODg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, x" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="1"/>
+            <for variable="x" start="1" end="x+1" direction="inc" step="1">
+                <output expression="&quot;L&#252;tfen 1. kenar uzunlu&#287;unu yaz&#305;n&#305;z.&quot;" newline="True"/>
+                <input variable="a"/>
+                <while expression="a &lt;= 0">
+                    <output expression="&quot;Uzunluk 0 veya 0'dan k&#252;&#231;&#252;k olamaz. L&#252;tfen tekrar deneyin.&quot;" newline="True"/>
+                    <input variable="a"/>
+                </while>
+                <output expression="&quot;L&#252;tfen 2. kenar uzunlu&#287;unu yaz&#305;n&#305;z.&quot;" newline="True"/>
+                <input variable="b"/>
+                <while expression="b &lt;= 0">
+                    <output expression="&quot;Uzunluk 0 veya 0'dan k&#252;&#231;&#252;k olamaz. L&#252;tfen tekrar deneyin.&quot;" newline="True"/>
+                    <input variable="b"/>
+                </while>
+                <output expression="&quot;L&#252;tfen 3. kenar uzunlu&#287;unu yaz&#305;n&#305;z.&quot;" newline="True"/>
+                <input variable="c"/>
+                <while expression="c &lt;= 0">
+                    <output expression="&quot;Uzunluk 0 veya 0'dan k&#252;&#231;&#252;k olamaz. L&#252;tfen tekrar deneyin.&quot;" newline="True"/>
+                    <input variable="c"/>
+                </while>
+                <if expression="a = b &amp;&amp; b = c">
+                    <then>
+                        <output expression="&quot;Bu e&#351;kenar bir &#252;&#231;gendir.&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="a = b || b = c || a = c">
+                            <then>
+                                <output expression="&quot;Bu ikizkenar bir &#252;&#231;gendir.&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Bu &#231;e&#351;itkenar bir &#252;&#231;gendir.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;____________________________________________________&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

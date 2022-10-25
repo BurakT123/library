@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cihat"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-25 11:58:44 AM"/>
+        <attribute name="created" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0yNTsxMToxODoyMiBBTTsyMzc1"/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0yNTsxMTo1ODo0NCBBTTsxOzI0OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ogrencisayisi, sinav1, sinav2, sozlu, x, sinifnotlari" type="Integer" array="False" size=""/>
+            <declare name="adsoyad, durumu" type="String" array="False" size=""/>
+            <declare name="ortalama, ogrencilerinnotlariortalamasi" type="Real" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen s&#305;n&#305;fta ka&#231; &#246;&#287;renci oldu&#287;unu yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <input variable="ogrencisayisi"/>
+            <while expression="ogrencisayisi &lt; 1">
+                <output expression="&quot;&#214;&#287;renci say&#305;s&#305; 1'den az olamaz. L&#252;tfen tekrar deneyiniz.&quot;" newline="True"/>
+                <input variable="ogrencisayisi"/>
+            </while>
+            <assign variable="sinifnotlari" expression="0"/>
+            <for variable="x" start="1" end="ogrencisayisi" direction="inc" step="1">
+                <output expression="&quot;L&#252;tfen &#246;&#287;rencinin ad&#305;n&#305; soyad&#305;n&#305; yaz&#305;n&#305;z.&quot;" newline="True"/>
+                <input variable="adsoyad"/>
+                <output expression="&quot;L&#252;tfen &#246;&#287;rencinin 1. s&#305;nav notunu yaz&#305;n&#305;z.&quot;" newline="True"/>
+                <input variable="sinav1"/>
+                <while expression="sinav1 &lt; 0">
+                    <output expression="&quot;S&#305;nav notu 0'dan k&#252;&#231;&#252;k olamaz. L&#252;tfen tekrar deneyin.&quot;" newline="True"/>
+                    <input variable="sinav1"/>
+                </while>
+                <output expression="&quot;L&#252;tfen &#246;&#287;rencinin 2. s&#305;nav notunu yaz&#305;n&#305;z.&quot;" newline="True"/>
+                <input variable="sinav2"/>
+                <while expression="sinav2 &lt; 0">
+                    <output expression="&quot;S&#305;nav notu 0'dan k&#252;&#231;&#252;k olamaz. L&#252;tfen tekrar deneyin.&quot;" newline="True"/>
+                    <input variable="sinav2"/>
+                </while>
+                <output expression="&quot;L&#252;tfen &#246;&#287;rencinin s&#246;zl&#252; notunu yaz&#305;n&#305;z.&quot;" newline="True"/>
+                <input variable="sozlu"/>
+                <while expression="sozlu &lt; 0">
+                    <output expression="&quot;S&#246;zl&#252; notu 0'dan k&#252;&#231;&#252;k olamaz. L&#252;tfen tekrar deneyin.&quot;" newline="True"/>
+                    <input variable="sozlu"/>
+                </while>
+                <assign variable="ortalama" expression="(sinav1 + sinav2 + sozlu) / 3"/>
+                <if expression="ortalama &lt; 50">
+                    <then>
+                        <assign variable="durumu" expression="&quot;Kald&#305;!&quot;"/>
+                    </then>
+                    <else>
+                        <assign variable="durumu" expression="&quot;Ge&#231;ti&quot;"/>
+                    </else>
+                </if>
+                <assign variable="sinifnotlari" expression="sinifnotlari + ortalama"/>
+                <output expression="x &amp; &quot;. &quot; &amp; adsoyad &amp; &quot; adl&#305; &#246;&#287;rencinin ortalamas&#305;: &quot; &amp; ortalama &amp; &quot; ve &quot; &amp; durumu" newline="True"/>
+            </for>
+            <assign variable="ogrencilerinnotlariortalamasi" expression="sinifnotlari / ogrencisayisi"/>
+            <output expression="&quot;S&#305;n&#305;f&#305;n not ortalamas&#305;: &quot; &amp; ogrencilerinnotlariortalamasi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

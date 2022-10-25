@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cihat"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-25 12:35:23 PM"/>
+        <attribute name="created" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0yNTsxMTo1OToxNiBBTTsyMzgz"/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0yNTsxMTo1OToyMSBBTTsxO2NpaGF0O0NJSEFUS1NNOzIwMjItMTAtMjU7MTE6MTg6MjIgQU07Mi5zY2hlbWFzLmZwcmc7NjI5Mw=="/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0yNTsxMjozNToyMyBQTTszOzI1MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ogrencisayisi, quiz, odev, final, vize, sinifnotlari, X" type="Integer" array="False" size=""/>
+            <declare name="adsoyad, notkodu" type="String" array="False" size=""/>
+            <declare name="notu, ogrencilerinnotlariortalamasi" type="Real" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen s&#305;n&#305;fta ka&#231; &#246;&#287;renci oldu&#287;unu yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <input variable="ogrencisayisi"/>
+            <while expression="ogrencisayisi &lt; 1">
+                <output expression="&quot;&#214;&#287;renci say&#305;s&#305; 1'den az olamaz. L&#252;tfen tekrar deneyiniz.&quot;" newline="True"/>
+                <input variable="ogrencisayisi"/>
+            </while>
+            <assign variable="sinifnotlari" expression="0"/>
+            <for variable="x" start="1" end="ogrencisayisi" direction="inc" step="1">
+                <output expression="&quot;L&#252;tfen &#246;&#287;rencinin ad&#305;n&#305; soyad&#305;n&#305; yaz&#305;n&#305;z.&quot;" newline="True"/>
+                <input variable="adsoyad"/>
+                <output expression="&quot;L&#252;tfen &#246;&#287;rencinin quiz notunu yaz&#305;n&#305;z.&quot;" newline="True"/>
+                <input variable="quiz"/>
+                <while expression="quiz &lt; 0">
+                    <output expression="&quot;Quiz notu 0'dan k&#252;&#231;&#252;k olamaz. L&#252;tfen tekrar deneyin.&quot;" newline="True"/>
+                    <input variable="quiz"/>
+                </while>
+                <output expression="&quot;L&#252;tfen &#246;&#287;rencinin &#246;dev notunu yaz&#305;n&#305;z.&quot;" newline="True"/>
+                <input variable="odev"/>
+                <while expression="odev &lt; 0">
+                    <output expression="&quot;&#214;dev notu 0'dan k&#252;&#231;&#252;k olamaz. L&#252;tfen tekrar deneyin.&quot;" newline="True"/>
+                    <input variable="odev"/>
+                </while>
+                <output expression="&quot;L&#252;tfen &#246;&#287;rencinin vize notunu yaz&#305;n&#305;z.&quot;" newline="True"/>
+                <input variable="vize"/>
+                <while expression="vize &lt; 0">
+                    <output expression="&quot;Vize notu 0'dan k&#252;&#231;&#252;k olamaz. L&#252;tfen tekrar deneyin.&quot;" newline="True"/>
+                    <input variable="vize"/>
+                </while>
+                <output expression="&quot;L&#252;tfen &#246;&#287;rencinin final notunu yaz&#305;n&#305;z.&quot;" newline="True"/>
+                <input variable="final"/>
+                <while expression="final &lt; 0">
+                    <output expression="&quot;Final notu 0'dan k&#252;&#231;&#252;k olamaz. L&#252;tfen tekrar deneyin.&quot;" newline="True"/>
+                    <input variable="final"/>
+                </while>
+                <assign variable="notu" expression="(quiz * 1/10 + odev * 1/10 + vize * 3/10 + final * 5/10)"/>
+                <assign variable="sinifnotlari" expression="sinifnotlari + notu"/>
+                <if expression="notu &lt;= 39">
+                    <then>
+                        <assign variable="notkodu" expression="&quot;ff&quot;"/>
+                    </then>
+                    <else>
+                        <if expression="notu &lt;= 49">
+                            <then>
+                                <assign variable="notkodu" expression="&quot;fd&quot;"/>
+                            </then>
+                            <else>
+                                <if expression="notu &lt;= 57">
+                                    <then>
+                                        <assign variable="notkodu" expression="&quot;dd&quot;"/>
+                                    </then>
+                                    <else>
+                                        <if expression="notu &lt;= 64">
+                                            <then>
+                                                <assign variable="notkodu" expression="&quot;dc&quot;"/>
+                                            </then>
+                                            <else>
+                                                <if expression="notu &lt;= 74">
+                                                    <then>
+                                                        <assign variable="notkodu" expression="&quot;cc&quot;"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="notu &lt;= 79">
+                                                            <then>
+                                                                <assign variable="notkodu" expression="&quot;cb&quot;"/>
+                                                            </then>
+                                                            <else>
+                                                                <if expression="notu &lt;= 84">
+                                                                    <then>
+                                                                        <assign variable="notkodu" expression="&quot;bb&quot;"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <if expression="notu &lt;= 89">
+                                                                            <then>
+                                                                                <assign variable="notkodu" expression="&quot;ba&quot;"/>
+                                                                            </then>
+                                                                            <else>
+                                                                                <assign variable="notkodu" expression="&quot;aa&quot;"/>
+                                                                            </else>
+                                                                        </if>
+                                                                    </else>
+                                                                </if>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="x &amp; &quot;. &quot; &amp; adsoyad &amp; &quot; adl&#305; &#246;&#287;rencinin notu: &quot; &amp; notu &amp; &quot; ve Not Harf Kodu: &quot; &amp; notkodu" newline="True"/>
+                <output expression="&quot;Di&#287;er &#246;&#287;renciye ge&#231;i&#351; yap&#305;l&#305;yor...&quot;" newline="True"/>
+            </for>
+            <assign variable="ogrencilerinnotlariortalamasi" expression="sinifnotlari / ogrencisayisi"/>
+            <output expression="&quot;S&#305;n&#305;f&#305;n not ortalamas&#305;: &quot; &amp; ogrencilerinnotlariortalamasi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
