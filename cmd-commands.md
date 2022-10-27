@@ -1,7 +1,7 @@
-<p>`cls`: (clear screen) ekrandaki tüm yazıları temizler.</p>
-<p>`xyz /?`       (xyz bir komut olmak üzere) herhangi bir komut hakkında bilgi almak için kullanılır</p>
-<p>`time`         geçerli zamanı saat dakika saniiye cinsinden gösterir</p>
-<p>`date`         geçerli zamanı saat dakika saniiye cinsinden gösterir</p>
+<p><code>cls</code>: (clear screen) ekrandaki tüm yazıları temizler.</p>
+<p><code>xyz /?</code>: (xyz bir komut olmak üzere) herhangi bir komut hakkında bilgi almak için kullanılır.</p>
+<p><code>time</code>: Geçerli zamanı saat dakika saniiye cinsinden gösterir.</p>
+<p><code>date</code>: Geçerli zamanı saat dakika saniiye cinsinden gösterir.</p>
 
 <br>
 
@@ -23,62 +23,62 @@ ah??t şeklinde arama yapıldığında eğer dosya içerisinde "ahmet, ahhmt, ah
 
 <br>
 
-<p>`ctrl + c` komutu durdurur.</p>
-<p>`dir /p`       dosyaların içini gösterir</p>
-<p>`dir /s`        bulunduğu konumun içindeki dosyların alt klasörlerini gösterir</p>
+<p><code>ctrl + c</code>: Komutu durdurur.</p>
+<p><code>dir /p</code>: Fosyaların içini gösterir</p>
+<p><code>dir /s</code>: Bulunduğu konumun içindeki dosyların alt klasörlerini gösterir</p>
 
 <br>
 
-<p>`dir /o`        genel sıralama</p>
-<p>`dir /od`      tarihe göre sıalama</p>
-<p>`dir /oe`      klasör ve dosyaların uzuntılarının alfabetik sıralamaya yarar</p>
-<p>`dir /on`      klasör ve dosyaları alfabetik sıralamaya göre sıralar</p>
-<p>`dir /os`      klasör ve dosyaların boyutlarına göre sıralar</p>
-<p>`dir /a`        dosyaların niteliklerini gösterir (dosya gizli olabilir, dosya sistem dosyası olabilir, arşiv dosyası olabilir ...)</p>
-<p>`dir /aa`      sadece arşivleri gösterir.</p>
-<p>`dir /ar`       sadece okunabilir dosyalar.</p>
-<p>`dir /ah`      sadece gizli dosyaları gösterir.</p>
-<p>`dir /ad`      sadece dizinleri gösterir.</p>
-<p>`dir /as`      sadece sistem dosyalarını gösterir.</p>
+<p><code>dir /o</code>: Genel sıralama</p>
+<p><code>dir /od</code>: Tarihe göre sıalama</p>
+<p><code>dir /oe</code>: Klasör ve dosyaların uzuntılarının alfabetik sıralamaya yarar.</p>
+<p><code>dir /on</code>: Klasör ve dosyaları alfabetik sıralamaya göre sıralar.</p>
+<p><code>dir /os</code>: Klasör ve dosyaların boyutlarına göre sıralar.</p>
+<p><code>dir /a</code>: Dosyaların niteliklerini gösterir (dosya gizli olabilir, dosya sistem dosyası olabilir, arşiv dosyası olabilir ...)</p>
+<p><code>dir /aa</code>: Sadece arşivleri gösterir.</p>
+<p><code>dir /ar</code>: Sadece okunabilir dosyalar.</p>
+<p><code>dir /ah</code>: Sadece gizli dosyaları gösterir.</p>
+<p><code>dir /ad</code>: Sadece dizinleri gösterir.</p>
+<p><code>dir /as</code>: Sadece sistem dosyalarını gösterir.</p>
 
 <br>
 
-<p>`attrib -H -R -S /S /D G:\*.*`       gizli dosyaların gösterilmesini sağlar.</p>
+<p><code>attrib -H -R -S /S /D G:\*.*</code>: Gizli dosyaların gösterilmesini sağlar.</p>
 
 <br>
 
-<p>`cd`                           change directory (dizin değiştirme)</p>
-<p>`cd ..`                        bir üst dosyaya çıkmak için kullanılır</p>
-<p>`cd (dosya yolu)`      dosyanın bulunduğu konuma ulaşmak için kullanılır.</p>
-<p>`cd \`                        ana konuma geri döndürür.</p>
+<p><code>cd</code>: Change directory (dizin değiştirme)</p>
+<p><code>cd ..</code>: Bir üst dosyaya çıkmak için kullanılır</p>
+<p><code>cd (dosya yolu)</code>: Dosyanın bulunduğu konuma ulaşmak için kullanılır.</p>
+<p><code>cd \</code>: Ana konuma geri döndürür.</p>
 
 <br>
 
-<p>`md  "dosya adı`      (make directory) klasör oluştrma işlemidir.</p>
-<p>`rd  "dosya adı"`      (remove directory) klasor kaldırma işlemidir.</p>
-<p>`vol`</p>
-<p>`ver`</p>
-<p>`prompt`                  varsayılan komum</p>
-<p>`prompt $p C:\`       varsayılan konuma geçer (C:\)</p>
-<p>`prompt $t`             geçerli zamana geçer.</p>
-<p>`prompt $d`            geçerli tarihe geçer.</p>
+<p><code>md  "dosya adı</code>: (make directory) klasör oluştrma işlemidir.</p>
+<p><code>rd  "dosya adı"</code>: (remove directory) klasor kaldırma işlemidir.</p>
+<p><code>vol</code>:</p>
+<p><code>ver</code>:</p>
+<p><code>prompt</code>: Varsayılan komum</p>
+<p><code>prompt $p C:\</code>: Varsayılan konuma geçer (C:\)</p>
+<p><code>prompt $t</code>: Geçerli zamana geçer.</p>
+<p><code>prompt $d</code>: Geçerli tarihe geçer.</p>
 
 <br>
 
-<p>iç komutlar:          bilgisarda o dosya olmasa bile çalışan komutlardır.</p>
-<p>dış komutlar:        dosyaya bağlı çalışır.</p>
+<p>iç komutlar: Bilgisarda o dosya olmasa bile çalışan komutlardır.</p>
+<p>dış komutlar: Dosyaya bağlı çalışır.</p>
 
 <br>
 
-<p>`copy con a.txt`             dosya oluşturma ve içerisine yazılar yazma işlemidir</p>
-<p>`type a.txt`                    dosya içeriğini görme</p>
-<p>`ren`                              dosyanın adını ve soyadını değişirmeye yarar.</p>
-<p>`ren a.txt deneme.txt`  dosya adını değiştirme</p>
-<p>`ren a.txt a.bat`         dosya soyadını değiştirme</p>
-<p>`del a.txt`                  dosyayı kaldırma</p>
-<p>`del *.txt`                  soyadı txt olan tüm dosyaları silmek için kullanılır</p>
-<p>`del a.*`                       adı a olan tüm dosyaları silmek için kullanılır</p>
-<p>`del *.*`                     tüm dosyaları silmek için kullanılır (klasörler silinmez)</p>
-<p>`del` dosya siler, `rd` klasör siler.</p>
-<p>`copy b.txt x.kal`         b.txt dosya içeğini kopyalar ve x.kal dosyası oluşturur içeriğini b.txt ile aynı yapar.</p>
-<p>`copy *.* C:\asd`         C de bulunan asd içerisine bulunulan konumdaki dosyaları kopyalar</p>
+<p><code>copy con a.txt</code>: Dosya oluşturma ve içerisine yazılar yazma işlemidir</p>
+<p><code>type a.txt</code>: Dosya içeriğini görme</p>
+<p><code>ren</code>: Dosyanın adını ve uzantısını değişirmeye yarar.</p>
+<p><code>ren a.txt deneme.txt</code>: Dosya adını değiştirme</p>
+<p><code>ren a.txt a.bat</code>: Dosya uzantısını değiştirme</p>
+<p><code>del a.txt</code>: Dosyayı kaldırma</p>
+<p><code>del *.txt</code>: Uzantısı txt olan tüm dosyaları silmek için kullanılır</p>
+<p><code>del a.*</code>: Adı a olan tüm dosyaları silmek için kullanılır</p>
+<p><code>del *.*</code>: Tüm dosyaları silmek için kullanılır (klasörler silinmez)</p>
+<p><code>del</code>: Dosya siler, </code>:rd</code>: Klasör siler.</p>
+<p><code>copy b.txt x.kal</code>: b.txt dosya içeğini kopyalar ve x.kal dosyası oluşturur içeriğini b.txt ile aynı yapar.</p>
+<p><code>copy *.* C:\asd</code>:C de bulunan asd içerisine bulunulan konumdaki dosyaları kopyalar</p>
