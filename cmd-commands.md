@@ -8,17 +8,17 @@
 <p>dir jokerleri: soru işareti (? ) ve yıldız (*) dır.</p>
 <p>Yıldız (*): kelimede bilinmeyen yerler için kullanılır.</p>
 <p>Örneğin:</p>
-<p>a*.txt şeklinde arama yapıldığında baş harfi "a" ve dosya uzantısı "txt" olan tüm dosyalar listelenir.</p>
-<p>*a.txt şeklinde arama yapıldığında son harfi "a" ve dosya uzantısı "txt" olan tüm dosyalar listelenir.</p>
-<p>*.txt şeklinde arama yapıldığında dosya uzantısı "txt" olan tüm dosyalar listelenir.</p>
-<p>ahmet.*xt şeklinde arama yapıldığında adı ahmet ve dosya uzantısının sonu "xt" olan tüm dosyalar listelenir.</p>
-<p>ahmet.tx* şeklinde arama yapıldığında adı ahmet ve dosya uzantısının başı "tx" olan tüm dosyalar listelenir.</p>
-<p>ahmet.* şeklinde arama yapıldığında adı ahmet olan tüm dosyalar listelenir.</p>
-<p>*.* şeklinde arama yapıldığında ise tüm dosyalar listelenir.</p>
+<p><code>a*.txt</code> şeklinde arama yapıldığında baş harfi "a" ve dosya uzantısı "txt" olan tüm dosyalar listelenir.</p>
+<p><code>*a.txt</code> şeklinde arama yapıldığında son harfi "a" ve dosya uzantısı "txt" olan tüm dosyalar listelenir.</p>
+<p><code>*.txt</code> şeklinde arama yapıldığında dosya uzantısı "txt" olan tüm dosyalar listelenir.</p>
+<p><code>ahmet.*xt</code> şeklinde arama yapıldığında adı ahmet ve dosya uzantısının sonu "xt" olan tüm dosyalar listelenir.</p>
+<p><code>ahmet.tx*</code> şeklinde arama yapıldığında adı ahmet ve dosya uzantısının başı "tx" olan tüm dosyalar listelenir.</p>
+<p><code>ahmet.*</code> şeklinde arama yapıldığında adı ahmet olan tüm dosyalar listelenir.</p>
+<p><code>*.*</code> şeklinde arama yapıldığında ise tüm dosyalar listelenir.</p>
 <p>Soru işareti (?): kelimelerde bilinmeyen harf/sembol/sayı vs. için kullanılır. (her bir soru işareti tek karakterdir.) </p>
 <p>Örneğin:</p>
 <p>
-ah??t şeklinde arama yapıldığında eğer dosya içerisinde "ahmet, ahhmt, ahmeet ..." dosyalarının olduğunu düşünürsek, arama sonucu olarak bize "ahmet, ahhmt" sonuçlarını verir.
+<code>ah??t</code> şeklinde arama yapıldığında eğer dosya içerisinde <code>"ahmet, ahhmt, ahmeet ..."</code> dosyalarının olduğunu düşünürsek, arama sonucu olarak bize <code>"ahmet, ahhmt"</code> sonuçlarını verir.
 </p>
 
 <br>
