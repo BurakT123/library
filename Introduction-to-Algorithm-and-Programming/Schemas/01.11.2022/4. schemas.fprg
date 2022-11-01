@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cihat"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-01 10:10:38 AM"/>
+        <attribute name="created" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMS0wMTswOTo1NzoyNyBBTTsyMzg1"/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMS0wMTswOTo1NzozNiBBTTsxO2NpaGF0O0NJSEFUS1NNOzIwMjItMTAtMTg7MDU6MTA6NTQgUE07MS4gc2NoZW1hcy5mcHJnOzYzNDc="/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMS0wMTsxMDoxMDozOCBBTTszOzI0Nzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, derece" type="Integer" array="False" size=""/>
+            <declare name="radyan" type="Real" array="False" size=""/>
+            <input variable="x"/>
+            <assign variable="radyan" expression="arccos(x)"/>
+            <assign variable="derece" expression="radyan * 180 / &#960;"/>
+            <output expression="&quot;Derece: &quot; &amp; derece" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cihat"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-01 10:34:44 AM"/>
+        <attribute name="created" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMS0wMTsxMDoyMDozMyBBTTsyMzY0"/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMS0wMTsxMDozNDo0NCBBTTsyOzI0ODA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s1, s2" type="Integer" array="False" size=""/>
+            <assign variable="s1" expression="random(101)"/>
+            <assign variable="s2" expression="random(101)"/>
+            <if expression="s1 = s2">
+                <then>
+                    <output expression="&quot;Birinci say&#305; ikinci say&#305;ya e&#351;ittir. &#8702; &quot; &amp; s1 &amp; &quot; &quot; &amp; s2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="s1 &gt; s2">
+                        <then>
+                            <output expression="&quot;&#304;kinci say&#305; birinci say&#305;dan b&#252;y&#252;kt&#252;r. &#8702; &quot; &amp; s1 &amp; &quot; &quot; &amp; s2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Birinci say&#305; ikinci say&#305;dan b&#252;y&#252;kt&#252;r. &#8702; &quot; &amp; s1 &amp; &quot; &quot; &amp; s2" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
