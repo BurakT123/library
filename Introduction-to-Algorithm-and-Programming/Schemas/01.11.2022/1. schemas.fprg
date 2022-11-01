@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cihat"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-01 09:56:49 AM"/>
+        <attribute name="created" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMC0xODswNToxMDo1NCBQTTsyMzky"/>
+        <attribute name="edited" value="Y2loYXQ7Q0lIQVRLU007MjAyMi0xMS0wMTswOTo1Njo0OSBBTTsxMzsyNTQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="derece" type="Integer" array="False" size=""/>
+            <declare name="radyan, sinus, cosinus, tanjant, cotanjant" type="Real" array="False" size=""/>
+            <declare name="dereceler" type="String" array="False" size=""/>
+            <assign variable="dereceler" expression="&quot;&quot;"/>
+            <for variable="derece" start="0" end="90" direction="inc" step="1">
+                <assign variable="radyan" expression="derece * &#960; / 180"/>
+                <assign variable="sinus" expression="sin(radyan)"/>
+                <assign variable="cosinus" expression="cos(radyan)"/>
+                <assign variable="tanjant" expression="tan(radyan)"/>
+                <if expression="tanjant = 0">
+                    <then>
+                        <assign variable="dereceler" expression="dereceler &amp; ToChar(13) &amp; &quot; Derece: &quot; &amp; derece &amp;&#13;&#10;&quot; Sin: &quot; &amp; sinus &amp;&#13;&#10;&quot; Cos: &quot; &amp; cosinus &amp;&#13;&#10;&quot; Tan: &quot; &amp; tanjant &amp;&#13;&#10;&quot; Cot: &quot; &amp; &quot;Tan&#305;ms&#305;z&quot;"/>
+                    </then>
+                    <else>
+                        <assign variable="cotanjant" expression="1 / tanjant"/>
+                        <assign variable="dereceler" expression="dereceler &amp; ToChar(13) &amp; &quot; Derece: &quot; &amp; derece &amp;&#13;&#10;&quot; Sin: &quot; &amp; sinus &amp;&#13;&#10;&quot; Cos: &quot; &amp; cosinus &amp;&#13;&#10;&quot; Tan: &quot; &amp; tanjant &amp;&#13;&#10;&quot; Cot: &quot; &amp; cotanjant"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="dereceler" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
