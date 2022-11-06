@@ -1,84 +1,84 @@
-<p><code>cls</code>: (clear screen) ekrandaki tüm yazıları temizler.</p>
-<p><code>xyz /?</code>: (xyz bir komut olmak üzere) herhangi bir komut hakkında bilgi almak için kullanılır.</p>
-<p><code>time</code>: Geçerli zamanı saat dakika saniiye cinsinden gösterir.</p>
-<p><code>date</code>: Geçerli zamanı saat dakika saniiye cinsinden gösterir.</p>
+- `cls`: (clear screen) ekrandaki tüm yazıları temizler.
+- `xyz /?`: (xyz bir komut olmak üzere) herhangi bir komut hakkında bilgi almak için kullanılır.
+- `time`: Geçerli zamanı saat dakika saniiye cinsinden gösterir.
+- `date`: Geçerli zamanı saat dakika saniiye cinsinden gösterir.
 
 <br>
 
-<p>dir jokerleri: soru işareti (? ) ve yıldız (*) dır.</p>
-<p>Yıldız (*): kelimede bilinmeyen yerler için kullanılır.</p>
-<p>Örneğin:</p>
-<p><code>a*.txt</code> şeklinde arama yapıldığında baş harfi "a" ve dosya uzantısı "txt" olan tüm dosyalar listelenir.</p>
-<p><code>*a.txt</code> şeklinde arama yapıldığında son harfi "a" ve dosya uzantısı "txt" olan tüm dosyalar listelenir.</p>
-<p><code>*.txt</code> şeklinde arama yapıldığında dosya uzantısı "txt" olan tüm dosyalar listelenir.</p>
-<p><code>ahmet.*xt</code> şeklinde arama yapıldığında adı ahmet ve dosya uzantısının sonu "xt" olan tüm dosyalar listelenir.</p>
-<p><code>ahmet.tx*</code> şeklinde arama yapıldığında adı ahmet ve dosya uzantısının başı "tx" olan tüm dosyalar listelenir.</p>
-<p><code>ahmet.*</code> şeklinde arama yapıldığında adı ahmet olan tüm dosyalar listelenir.</p>
-<p><code>*.*</code> şeklinde arama yapıldığında ise tüm dosyalar listelenir.</p>
-<p>Soru işareti (?): kelimelerde bilinmeyen harf/sembol/sayı vs. için kullanılır. (her bir soru işareti tek karakterdir.) </p>
-<p>Örneğin:</p>
-<p>
-<code>ah??t</code> şeklinde arama yapıldığında eğer dosya içerisinde <code>"ahmet, ahhmt, ahmeet ..."</code> dosyalarının olduğunu düşünürsek, arama sonucu olarak bize <code>"ahmet, ahhmt"</code> sonuçlarını verir.
-</p>
+- dir jokerleri: soru işareti (? ) ve yıldız (*) dır.
+- Yıldız (*): kelimede bilinmeyen yerler için kullanılır.
+- Örneğin:
+- `a*.txt` şeklinde arama yapıldığında baş harfi "a" ve dosya uzantısı "txt" olan tüm dosyalar listelenir.
+- `*a.txt` şeklinde arama yapıldığında son harfi "a" ve dosya uzantısı "txt" olan tüm dosyalar listelenir.
+- `*.txt` şeklinde arama yapıldığında dosya uzantısı "txt" olan tüm dosyalar listelenir.
+- `ahmet.*xt` şeklinde arama yapıldığında adı ahmet ve dosya uzantısının sonu "xt" olan tüm dosyalar listelenir.
+- `ahmet.tx*` şeklinde arama yapıldığında adı ahmet ve dosya uzantısının başı "tx" olan tüm dosyalar listelenir.
+- `ahmet.*` şeklinde arama yapıldığında adı ahmet olan tüm dosyalar listelenir.
+- `*.*` şeklinde arama yapıldığında ise tüm dosyalar listelenir.
+- Soru işareti (?): kelimelerde bilinmeyen harf/sembol/sayı vs. için kullanılır. (her bir soru işareti tek karakterdir.) 
+- Örneğin:
+- 
+`ah??t` şeklinde arama yapıldığında eğer dosya içerisinde `"ahmet, ahhmt, ahmeet ..."` dosyalarının olduğunu düşünürsek, arama sonucu olarak bize `"ahmet, ahhmt"` sonuçlarını verir.
+
 
 <br>
 
-<p><code>ctrl + c</code>: Komutu durdurur.</p>
-<p><code>dir /p</code>: Fosyaların içini gösterir</p>
-<p><code>dir /s</code>: Bulunduğu konumun içindeki dosyların alt klasörlerini gösterir</p>
+- `ctrl + c`: Komutu durdurur.
+- `dir /p`: Fosyaların içini gösterir
+- `dir /s`: Bulunduğu konumun içindeki dosyların alt klasörlerini gösterir
 
 <br>
 
-<p><code>dir /o</code>: Genel sıralama</p>
-<p><code>dir /od</code>: Tarihe göre sıalama</p>
-<p><code>dir /oe</code>: Klasör ve dosyaların uzuntılarının alfabetik sıralamaya yarar.</p>
-<p><code>dir /on</code>: Klasör ve dosyaları alfabetik sıralamaya göre sıralar.</p>
-<p><code>dir /os</code>: Klasör ve dosyaların boyutlarına göre sıralar.</p>
-<p><code>dir /a</code>: Dosyaların niteliklerini gösterir (dosya gizli olabilir, dosya sistem dosyası olabilir, arşiv dosyası olabilir ...)</p>
-<p><code>dir /aa</code>: Sadece arşivleri gösterir.</p>
-<p><code>dir /ar</code>: Sadece okunabilir dosyalar.</p>
-<p><code>dir /ah</code>: Sadece gizli dosyaları gösterir.</p>
-<p><code>dir /ad</code>: Sadece dizinleri gösterir.</p>
-<p><code>dir /as</code>: Sadece sistem dosyalarını gösterir.</p>
+- `dir /o`: Genel sıralama
+- `dir /od`: Tarihe göre sıalama
+- `dir /oe`: Klasör ve dosyaların uzuntılarının alfabetik sıralamaya yarar.
+- `dir /on`: Klasör ve dosyaları alfabetik sıralamaya göre sıralar.
+- `dir /os`: Klasör ve dosyaların boyutlarına göre sıralar.
+- `dir /a`: Dosyaların niteliklerini gösterir (dosya gizli olabilir, dosya sistem dosyası olabilir, arşiv dosyası olabilir ...)
+- `dir /aa`: Sadece arşivleri gösterir.
+- `dir /ar`: Sadece okunabilir dosyalar.
+- `dir /ah`: Sadece gizli dosyaları gösterir.
+- `dir /ad`: Sadece dizinleri gösterir.
+- `dir /as`: Sadece sistem dosyalarını gösterir.
 
 <br>
 
-<p><code>attrib -H -R -S /S /D G:\*.*</code>: Gizli dosyaların gösterilmesini sağlar.</p>
+- `attrib -H -R -S /S /D G:\*.*`: Gizli dosyaların gösterilmesini sağlar.
 
 <br>
 
-<p><code>cd</code>: Change directory (dizin değiştirme)</p>
-<p><code>cd ..</code>: Bir üst dosyaya çıkmak için kullanılır</p>
-<p><code>cd (dosya yolu)</code>: Dosyanın bulunduğu konuma ulaşmak için kullanılır.</p>
-<p><code>cd \</code>: Ana konuma geri döndürür.</p>
+- `cd`: Change directory (dizin değiştirme)
+- `cd ..`: Bir üst dosyaya çıkmak için kullanılır
+- `cd (dosya yolu)`: Dosyanın bulunduğu konuma ulaşmak için kullanılır.
+- `cd \`: Ana konuma geri döndürür.
 
 <br>
 
-<p><code>md  "dosya adı</code>: (make directory) klasör oluştrma işlemidir.</p>
-<p><code>rd  "dosya adı"</code>: (remove directory) klasor kaldırma işlemidir.</p>
-<p><code>vol</code>:</p>
-<p><code>ver</code>:</p>
-<p><code>prompt</code>: Varsayılan komum</p>
-<p><code>prompt $p C:\</code>: Varsayılan konuma geçer (C:\)</p>
-<p><code>prompt $t</code>: Geçerli zamana geçer.</p>
-<p><code>prompt $d</code>: Geçerli tarihe geçer.</p>
+- `md  "dosya adı`: (make directory) klasör oluştrma işlemidir.
+- `rd  "dosya adı"`: (remove directory) klasor kaldırma işlemidir.
+- `vol`:
+- `ver`:
+- `prompt`: Varsayılan komum
+- `prompt $p C:\`: Varsayılan konuma geçer (C:\)
+- `prompt $t`: Geçerli zamana geçer.
+- `prompt $d`: Geçerli tarihe geçer.
 
 <br>
 
-<p>iç komutlar: Bilgisarda o dosya olmasa bile çalışan komutlardır.</p>
-<p>dış komutlar: Dosyaya bağlı çalışır.</p>
+- iç komutlar: Bilgisarda o dosya olmasa bile çalışan komutlardır.
+- dış komutlar: Dosyaya bağlı çalışır.
 
 <br>
 
-<p><code>copy con a.txt</code>: Dosya oluşturma ve içerisine yazılar yazma işlemidir</p>
-<p><code>type a.txt</code>: Dosya içeriğini görme</p>
-<p><code>ren</code>: Dosyanın adını ve uzantısını değişirmeye yarar.</p>
-<p><code>ren a.txt deneme.txt</code>: Dosya adını değiştirme</p>
-<p><code>ren a.txt a.bat</code>: Dosya uzantısını değiştirme</p>
-<p><code>del a.txt</code>: Dosyayı kaldırma</p>
-<p><code>del *.txt</code>: Uzantısı txt olan tüm dosyaları silmek için kullanılır</p>
-<p><code>del a.*</code>: Adı a olan tüm dosyaları silmek için kullanılır</p>
-<p><code>del *.*</code>: Tüm dosyaları silmek için kullanılır (klasörler silinmez)</p>
-<p><code>del</code>: Dosya siler, </code>:rd</code>: Klasör siler.</p>
-<p><code>copy b.txt x.kal</code>: b.txt dosya içeğini kopyalar ve x.kal dosyası oluşturur içeriğini b.txt ile aynı yapar.</p>
-<p><code>copy *.* C:\asd</code>:C de bulunan asd içerisine bulunulan konumdaki dosyaları kopyalar</p>
+- `copy con a.txt`: Dosya oluşturma ve içerisine yazılar yazma işlemidir
+- `type a.txt`: Dosya içeriğini görme
+- `ren`: Dosyanın adını ve uzantısını değişirmeye yarar.
+- `ren a.txt deneme.txt`: Dosya adını değiştirme
+- `ren a.txt a.bat`: Dosya uzantısını değiştirme
+- `del a.txt`: Dosyayı kaldırma
+- `del *.txt`: Uzantısı txt olan tüm dosyaları silmek için kullanılır
+- `del a.*`: Adı a olan tüm dosyaları silmek için kullanılır
+- `del *.*`: Tüm dosyaları silmek için kullanılır (klasörler silinmez)
+- `del`: Dosya siler, `:rd`: Klasör siler.
+- `copy b.txt x.kal`: b.txt dosya içeğini kopyalar ve x.kal dosyası oluşturur içeriğini b.txt ile aynı yapar.
+- `copy *.* C:\asd`:C de bulunan asd içerisine bulunulan konumdaki dosyaları kopyalar

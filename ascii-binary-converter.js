@@ -1,8 +1,5 @@
-const asciiCode = (letter) => {
-    if (!letter.slice(0)) return undefined;
-    if (letter.slice(1)) return `This is not a latter, it is a word or words`;
-    return String(letter.codePointAt(0))
-}
+const asciiCode = (letter) => !letter.slice(0) || letter.slice(1) ? `This 'latter' value must be one charecter long!` : String(letter.codePointAt(0));
+const asciiToLetter = (ascii) => String.fromCharCode(ascii)
 
 function asciiToBinary(letter, toBase = 2, output = "") {
     if (toBase <= 1) return "Error: An integer less than two cannot be used in this conversion."
@@ -18,14 +15,14 @@ function asciiToBinary(letter, toBase = 2, output = "") {
         return `${zeros.map(m => m).join("")}`
     }
 
-    const binaryCode = (code) => {
-        if (code.split("").length < 8) return `${putZero(8 - code.split("").length)}${code}`
-        return code
-    }
+    const binaryCode = (code) => code.split("").length < 8 ? `${putZero(8 - code.split("").length)}${code}` : code;
 
     return { letter, asciiCode: asciiCode(letter), binaryCode: binaryCode(division(asciiCode(letter))) }
 }
 
-console.log(asciiToBinary("0"))
+console.log(asciiToBinary("A"))
 
 //Online Test: https://runkit.com/cihatksm/ascii-binary
+
+
+for (let number = 0; asciiToLetter(number); number++) console.log(asciiToBinary(asciiToLetter(number)))
