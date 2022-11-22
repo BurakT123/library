@@ -43,6 +43,6 @@ for i in range(0, 45 + 1):
         h3 = "tanımsız"
     else: 
         h3 = 1 / math.tan(math.radians(i))
-    text = text + str(i) + " derece: \n" + str(h) + str(h1) + str(h2) + str(h3) + "\n\n"
+    text = text + str(i) + " derece: \n" + str(h) + " " + str(h1) + " " + str(h2) + " " + str(h3) + "\n\n"
     
 print(text)
