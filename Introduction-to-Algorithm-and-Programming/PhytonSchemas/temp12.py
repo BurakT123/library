@@ -26,13 +26,13 @@ g1 = math.cos(math.radians(60))
 g2 = math.tan(math.radians(45))
 g3 = 1 / math.tan(math.radians(45))
 
-print(a)
-print(b, b1)
-print(c, c1)
-print(d, d1, d2, d3, d4)
-print(e, e1)
-print(f, f1, f2)
-print(g, g1, g2, g3)
+#print(a)
+#print(b, b1)
+#print(c, c1)
+#print(d, d1, d2, d3, d4)
+#print(e, e1)
+#print(f, f1, f2)
+#print(g, g1, g2, g3)
 
 text = ""
 for i in range(0, 45 + 1):
@@ -45,4 +45,14 @@ for i in range(0, 45 + 1):
         h3 = 1 / math.tan(math.radians(i))
     text = text + str(i) + " derece: \n" + str(h) + " " + str(h1) + " " + str(h2) + " " + str(h3) + "\n\n"
     
-print(text)
+#print(text)
+
+i = math.degrees(math.asin(0.5))
+i1 = math.degrees(math.acos(0.5))
+i2 = math.degrees(math.atan(0.5))
+i3 = math.degrees(1 / math.atan(1))
+
+print(i, i1, i2, i3)
+
+
+
